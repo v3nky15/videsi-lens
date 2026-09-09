@@ -7,6 +7,7 @@
   <title>Videsi Lens — Photography</title>
 
   <link rel="stylesheet" href="./style.css">
+  <script src="./data.js" defer></script>
   <script src="./script.js" defer></script>
 </head>
 
@@ -25,20 +26,68 @@
   </div>
 </header>
 
+<nav class="main-nav" aria-label="Main navigation">
+  <a href="#journal">Journal</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
   <main>
-    <figure>
-      <img
-        src="./images/photo-01.jpg"
-        alt="Describe what is visible in this photograph"
-      >
-      <figcaption>A moment, held.</figcaption>
-    </figure>
+    <section id="journal" class="journal">
+    <p class="section-label">Explore the collections</p>
+
+  <figure class="photo-book">
+    <div class="book-heading">
+      <span>Videsi Lens / Collections</span>
+      <span id="book-count">01 / 07</span>
+    </div>
+
+    <a id="book-link" class="book-image">
+      <img id="book-cover" alt="">
+    </a>
+
+    <figcaption class="book-caption">
+      <span id="book-category" aria-live="polite"></span>
+      <span>Click to view photographs →</span>
+    </figcaption>
+  </figure>
+
+  <div class="book-controls">
+    <button id="previous-category" type="button">
+      ← Previous
+    </button>
+
+    <button id="next-category" type="button">
+      Next →
+    </button>
+  </div>
+
+  <noscript>
+    Enable JavaScript to browse the photography collections.
+  </noscript>
+</section>
+
+  <section id="about" class="about-section">
+    <p class="section-label">Behind the lens</p>
+    <h2>A way of seeing.</h2>
+
+    <p>
+      A collection of places, moments, and small details
+      worth a second look.
+    </p>
+  </section>
   </main>
 
-  <footer>
-    <a href="https://www.instagram.com/videsi_lens/">
-      Follow Videsi Lens on Instagram
-    </a>
-  </footer>
+  <footer id="contact">
+  <h2>Let’s capture your next story.</h2>
+
+  <p>
+    For photography enquiries, get in touch on Instagram.
+  </p>
+
+  <a href="https://www.instagram.com/videsi_lens/">
+    Enquire about a shoot ↗
+  </a>
+</footer>
 </body>
 </html>
